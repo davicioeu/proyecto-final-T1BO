@@ -1,7 +1,9 @@
 
 
-…or create a new repository on the command line
-echo "# proyecto-final-T1BO" >> README.md
+
+README.md
+
+```bash
 git init
 git add README.md
 git commit -m "first commit"
@@ -13,11 +15,6 @@ git remote add origin https://github.com/davicioeu/proyecto-final-T1BO.git
 git branch -M main
 git push -u origin main
 
-```bash
-
-// comment here
-
-```
 
 
 Claro, aquí tienes un resumen de los comandos básicos de Git, junto con líneas de código y comentarios explicativos:
