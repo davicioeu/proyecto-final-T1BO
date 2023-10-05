@@ -114,7 +114,3 @@ git push -u origin main
   ```bash
   git branch -d nombre-de-la-rama-a-borrar
   ```
-
-Estos son algunos de los comandos Git básicos que te ayudarán a comenzar a trabajar con Git 
-y controlar tus proyectos. Ten en cuenta que Git tiene muchas más funcionalidades y comandos avanzados,
-pero estos son esenciales para la mayoría de las tareas cotidianas.
