@@ -15,6 +15,7 @@ git remote add origin https://github.com/davicioeu/proyecto-final-T1BO.git
 git branch -M main
 git push -u origin main
 
+```
 
 
 ### Comandos básicos de Git, junto con líneas de código y comentarios explicativos:
