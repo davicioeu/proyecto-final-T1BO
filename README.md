@@ -81,6 +81,7 @@ git push -u origin main
 
 - Trae los cambios más recientes desde el repositorio remoto y los fusiona en tu rama actual:
   ```bash
+  # hace un merge de remoto -> local
   git pull origin tu-rama
   ```
 
@@ -88,7 +89,13 @@ git push -u origin main
 
 - Envía tus cambios confirmados al repositorio remoto:
   ```bash
+  
   git push origin tu-rama
+  
+  # forzar el push local -> remoto
+  git push --force origin tu-rama
+  
+  
   ```
 
 **8. Cambiar de rama:**
@@ -114,3 +121,19 @@ git push -u origin main
   ```bash
   git branch -d nombre-de-la-rama-a-borrar
   ```
+
+
+ **Como usar git rebase**
+Supongamos que tienes una rama llamada mi-rama que se bifurcó de main en algún momento 
+y has realizado varios commits en mi-rama. Para "rebasar" mi-rama sobre main, puedes ejecutar:
+```bash
+
+Copy code
+git checkout mi-rama
+git rebase main
+
+```
+Esto tomará los commits en mi-rama, los aplicará uno por uno en la parte superior de main y
+ reorganizará la historia de mi-rama para que parezca que se basa directamente en main.
+  
+  
