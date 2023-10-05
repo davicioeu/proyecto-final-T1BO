@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import forms.mantenimiento.consultar_ceramico;
+import forms.mantenimiento.FormConsultarCera;
 
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
@@ -18,11 +18,16 @@ import javax.swing.JDialog;
 
 public class ViewForm extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	//private static final long serialVersionUID = 1L;
 	protected JPanel contentPane;
 	
 	// block menu archivo
-	public JMenuItem m_archivo;
+	protected JMenuItem m_archivo;
 	protected JMenuItem sm_salir;
 	
 	// block menu mantenimiento

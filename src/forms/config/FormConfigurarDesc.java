@@ -1,4 +1,4 @@
-package forms.mantenimiento;
+package forms.config;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
@@ -8,7 +8,7 @@ import javax.swing.JDialog;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-public class consultar_ceramico extends JDialog {
+public class FormConfigurarDesc extends JDialog {
 
 	private static final long serialVersionUID = 1L;
 	private final JPanel contentPanel = new JPanel();
@@ -18,7 +18,7 @@ public class consultar_ceramico extends JDialog {
 	 */
 	public static void main(String[] args) {
 		try {
-			consultar_ceramico dialog = new consultar_ceramico();
+			FormConfigurarDesc dialog = new FormConfigurarDesc();
 			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 			dialog.setVisible(true);
 		} catch (Exception e) {
@@ -29,7 +29,7 @@ public class consultar_ceramico extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public consultar_ceramico() {
+	public FormConfigurarDesc() {
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setLayout(new FlowLayout());

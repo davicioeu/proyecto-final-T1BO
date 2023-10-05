@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 
-import forms.mantenimiento.consultar_ceramico;
+import forms.mantenimiento.FormConsultarCera;
 
 public class ActionForm extends ViewForm {
 
@@ -42,7 +42,7 @@ public class ActionForm extends ViewForm {
 	
 	//implement actions event
 	void action_mantenimiento_consultar(ActionEvent e) {
-		JDialog midialog = new consultar_ceramico();
+		JDialog midialog = new FormConsultarCera();
 		midialog.setLocationRelativeTo(null);
 		midialog.setVisible(true);
 		
