@@ -17,7 +17,7 @@ git push -u origin main
 
 
 
-Claro, aquí tienes un resumen de los comandos básicos de Git, junto con líneas de código y comentarios explicativos:
+### Comandos básicos de Git, junto con líneas de código y comentarios explicativos:
 
 **1. Configuración inicial:**
 
