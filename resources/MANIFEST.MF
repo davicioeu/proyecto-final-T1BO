@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: mainpackage.MainApplication
+Class-Path: libs/flatlaf-3.1.1.jar
+java-version: 11
+

@@ -5,6 +5,8 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 import forms.mantenimiento.FormConsultarCera;
+import forms.mantenimiento.FormListarCera;
+import forms.mantenimiento.FormModificarCera;
 
 public class ActionForm extends ViewForm {
 
@@ -35,6 +37,18 @@ public class ActionForm extends ViewForm {
 			}
 		});
 		
+		sm_modificar_c.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				action_mantenimiento_modificar(e);
+			}
+		});
+		
+		sm_listar_c.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				action_mantenimiento_listar(e);
+			}
+		});
+		
 		
 		
 	}
@@ -47,6 +61,24 @@ public class ActionForm extends ViewForm {
 		midialog.setVisible(true);
 		
 	}
+	
+	//implement actions event
+	void action_mantenimiento_modificar(ActionEvent e) {
+		JDialog midialog = new FormModificarCera();
+		midialog.setLocationRelativeTo(null);
+		midialog.setVisible(true);
+		
+	}
+
+	//implement actions event
+	void action_mantenimiento_listar(ActionEvent e) {
+		JDialog midialog = new FormListarCera();
+		midialog.setLocationRelativeTo(null);
+		midialog.setVisible(true);
+		
+	}
+	
+	
 	
 	void action_closeprogram() {
 		this.dispose();
