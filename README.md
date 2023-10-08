@@ -12,17 +12,11 @@ Los objetivos y conocimiento adquiridos por parte de los participantes al culmin
 
 :white_check_mark: crear una solución algorítmica para el problema propuesto usando las 
 estructuras algorítmicas apropiadas.
-
 :white_check_mark: Implementar una solución algorítmica usando el lenguaje Java.
-
 :white_check_mark: Utilizacion de los conceptos adquiridos en las clases virtuales y implementados en el codigo java.
-
 :white_check_mark: Refactorizacion de codigo para su mejora, empleando las buenas practicas de codificacion.
-
 :white_check_mark: Utilizacion de librerias como flatlaf-3.1.1.jar para implementar mejoras en el programa.
-
 :white_check_mark: Utilizacion de Git como sistema de versionamiento de nuestro proyecto.
-
 :white_check_mark: Comprendiendo las limitaciones del proyecto dado por las reglas del requerimiento del documento Proyecto_IA_2023_02.pdf
 
 ## ESPECIFICACIÓN Y ALCANCE DEL PROYECTO
