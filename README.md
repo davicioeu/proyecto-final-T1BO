@@ -10,7 +10,7 @@ Se utilizo el lenguaje de programacion de java ya que cuenta con la caracteristi
 
 Los objetivos y conocimiento adquiridos por parte de los participantes al culminar con este proyecto son las siguientes:
 
-- [x] crear una solución algorítmica para el problema propuesto usando las 
+- :white_check_mark: crear una solución algorítmica para el problema propuesto usando las 
 estructuras algorítmicas apropiadas.
 - [x] Implementar una solución algorítmica usando el lenguaje Java.
 - [x] Utilizacion de los conceptos adquiridos en las clases virtuales y implementados en el codigo java.
