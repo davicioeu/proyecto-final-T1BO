@@ -49,7 +49,7 @@ La solucion de este proyecto cuenta con las siguientes caracteristicas basadas e
 debido a las limitaciones y reglas del proyecto , se utilizacion variables de clases estaticas para almacenar datos de configuracion y elementos de almacen ceramico como tambien estados de compras, y esta mas que decir que las variables se restableceran como estan definidos inicialmente al liberar el programa de la memoria ram al cerrar el programa.
 
 
-### Ejemplo
+### CAPTURA
 
 ![image](./resources/program_java.gif)
 
