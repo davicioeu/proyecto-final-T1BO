@@ -2,16 +2,25 @@ package forms.config;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JDialog;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
+
+import data.DataConfig;
+import net.miginfocom.swing.MigLayout;
 
 public class FormConfigurarCantOp extends JDialog {
 
 	private static final long serialVersionUID = 1L;
-	private final JPanel contentPanel = new JPanel();
+	protected JButton cerrar;
+	protected JButton guardar;
+	protected JTextField textFieldCantidadOptima;
 
 	/**
 	 * Launch the application.
@@ -30,27 +39,58 @@ public class FormConfigurarCantOp extends JDialog {
 	 * Create the dialog.
 	 */
 	public FormConfigurarCantOp() {
-		setBounds(100, 100, 450, 300);
-		getContentPane().setLayout(new BorderLayout());
-		contentPanel.setLayout(new FlowLayout());
-		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
-		getContentPane().add(contentPanel, BorderLayout.CENTER);
+		setResizable(false);
+		setBounds(100, 100, 401, 123);
+		getContentPane().setLayout(new MigLayout("gapx 10px, gapy 10px", "[100px,left][50px,grow][100px,fill]", "[][][]"));
 		{
-			JPanel buttonPane = new JPanel();
-			buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
-			getContentPane().add(buttonPane, BorderLayout.SOUTH);
-			{
-				JButton okButton = new JButton("OK");
-				okButton.setActionCommand("OK");
-				buttonPane.add(okButton);
-				getRootPane().setDefaultButton(okButton);
-			}
-			{
-				JButton cancelButton = new JButton("Cancel");
-				cancelButton.setActionCommand("Cancel");
-				buttonPane.add(cancelButton);
-			}
+			JLabel labelDescription = new JLabel("Cantidad optima de unidades vendidas");
+			getContentPane().add(labelDescription, "cell 0 0,alignx trailing");
 		}
+		
+		{
+			textFieldCantidadOptima = new JTextField();
+			getContentPane().add(textFieldCantidadOptima, "cell 1 0,growx");
+		}
+		
+		{
+			guardar = new JButton("Aceptar");
+			guardar.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					saveJDialog(e);
+				}
+			});
+			getContentPane().add(guardar, "cell 2 0");
+		}
+		
+		cerrar = new JButton("Cancelar");
+		cerrar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				closeJDialog();
+			}
+		});
+		
+		getContentPane().add(cerrar, "cell 2 1");
+		
+		setDefaultValues();
+		
+	}
+	
+	public void setDefaultValues() {
+		
+		textFieldCantidadOptima.setText(Integer.toString(DataConfig.cantidadOptima));
+		
+	}
+	
+	public void saveJDialog(ActionEvent e) {
+
+		DataConfig.cantidadOptima = Integer.parseInt(textFieldCantidadOptima.getText());
+		
+		dispose();
+		
+	}
+	
+	public void closeJDialog() {
+		dispose();
 	}
 
 }

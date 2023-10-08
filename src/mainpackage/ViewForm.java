@@ -15,6 +15,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 import javax.swing.JDialog;
+import javax.swing.JLabel;
+import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.ImageIcon;
 
 public class ViewForm extends JFrame {
 
@@ -51,6 +55,7 @@ public class ViewForm extends JFrame {
 	// block menu ayuda
 	protected JMenuItem m_ayuda;
 	protected JMenuItem sm_cercade;
+	protected JLabel lblNewLabel;
 
 	/**
 	 * Create the frame.
@@ -117,6 +122,29 @@ public class ViewForm extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
+		
+		
+        ImageIcon imageIcon = new ImageIcon(MainApplication.class.getResource("/logo.png")); // Reemplaza con la ruta de tu imagen
+
+		
+		lblNewLabel = new JLabel(imageIcon);
+		
+		GroupLayout gl_contentPane = new GroupLayout(contentPane);
+		gl_contentPane.setHorizontalGroup(
+			gl_contentPane.createParallelGroup(Alignment.LEADING)
+				.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
+					.addGap(196)
+					.addComponent(lblNewLabel, GroupLayout.DEFAULT_SIZE, 323, Short.MAX_VALUE)
+					.addGap(185))
+		);
+		gl_contentPane.setVerticalGroup(
+			gl_contentPane.createParallelGroup(Alignment.LEADING)
+				.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
+					.addGap(132)
+					.addComponent(lblNewLabel, GroupLayout.DEFAULT_SIZE, 275, Short.MAX_VALUE)
+					.addGap(122))
+		);
+		contentPane.setLayout(gl_contentPane);
 	}
 
 }

@@ -143,7 +143,7 @@ public class FormListarCera extends JDialog {
 			" Ancho    (cm) : " + ancho + " cm",
 			" Largo    (cm) : " + largo + " cm",
 			" Espesor  (mm) : " + espesor + " cm",
-			" Contenido     : " + modelo + " unidades",
+			" Contenido     : " + contenido + " unidades",
 			" "
 		);
 		
