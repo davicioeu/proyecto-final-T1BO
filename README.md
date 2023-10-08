@@ -25,8 +25,12 @@ La solucion de este proyecto cuenta con las siguientes caracteristicas basadas e
 
 ### Estructura del Menu: 
 
+
+```yaml
+
 - Archivo
   - Salir
+
 - Mantenimiento
   - Consultar cerámico
   - Modificar cerámico
@@ -35,13 +39,17 @@ La solucion de este proyecto cuenta con las siguientes caracteristicas basadas e
 - Ventas
   - Vender
   - Generar reportes
+
 - Configuración
   - Configurar descuentos
   - Configurar obsequios
   - Configurar cantidad óptima
   - Configurar cuota diaria
+
 - Ayuda
   - Acerca de Tienda
+
+```
 
 
 ### Persistencia de Datos
