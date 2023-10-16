@@ -1,5 +1,5 @@
 
-
+<!--
 # Proyecto Final Java T1BO
 
 proyecto final de algoritma donde se emplearon conceptos como estructura secuencial, estructura de controls, declaracion de variables, definicion de metodos y su implementacion , asi como otros conceptos como modulos o paquetes para la agrupacion y importacion de codigos en distintos ficheros.
@@ -18,6 +18,8 @@ estructuras algorítmicas apropiadas.
 5. :white_check_mark: Utilizacion de librerias como flatlaf-3.1.1.jar para implementar mejoras en el programa.
 6. :white_check_mark: Utilizacion de Git como sistema de versionamiento de nuestro proyecto.
 7. :white_check_mark: Comprendiendo las limitaciones del proyecto dado por las reglas del requerimiento del documento Proyecto_IA_2023_02.pdf
+
+-->
 
 ## ESPECIFICACIÓN Y ALCANCE DEL PROYECTO
 
